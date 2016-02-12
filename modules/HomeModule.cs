@@ -18,6 +18,9 @@ namespace Contact
       Get["/contact/{id}"] = parameters => {
         return View["view_contact.cshtml", ContactClass.GetById(parameters.id)];
       };
+      Get["/addContact"] = _ => {
+        return View["add_contact.cshtml"];
+      };
     }
   }
 }

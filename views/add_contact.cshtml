@@ -1,0 +1,10 @@
+@Html.Partial("header.cshtml")
+
+<form action="/contact_created" method="post">
+  <label for="name">name</label><input type="text" name="name" value="">
+  <label for="phone">phone</label><input type="text" name="phone" value="">
+  <label for="address">address</label><input type="text" name="address" value="">
+  <input type="submit" name="submit" value="Add to Address Book">
+</form>
+
+<a href="/">Return home, don't save contact</a>
