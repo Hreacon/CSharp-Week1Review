@@ -1,0 +1,10 @@
+@Html.Partial("header.cshtml")
+
+<h1>Contact Details</h1>
+<ul>
+    <li>@Model.GetName()</li>
+    <li>@Model.GetPhone()</li>
+    <li>@Model.GetAddress()</li>
+</ul>
+
+<a href="/">Back to Address Book</a>

@@ -15,7 +15,9 @@ namespace Contact
         ContactClass.DeleteAll();
         return View["contacts_deleted.cshtml"];
       };
-      
+      Get["/contact/{id}"] = parameters => {
+        return View["view_contact.cshtml", ContactClass.GetById(parameters.id)];
+      };
     }
   }
 }
