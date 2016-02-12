@@ -11,6 +11,11 @@ namespace Contact
       Get["/"] = _ => {
         return View["list_all_contacts.cshtml", ContactClass.GetAll()];
       };
+      Get["/contacts_deleted"] = _ => {
+        ContactClass.DeleteAll();
+        return View["contacts_deleted.cshtml"];
+      };
+      
     }
   }
 }
