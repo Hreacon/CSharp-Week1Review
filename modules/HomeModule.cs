@@ -21,6 +21,13 @@ namespace Contact
       Get["/addContact"] = _ => {
         return View["add_contact.cshtml"];
       };
+      Post["/contact_created"] = _ => {
+        string name = Request.Form["name"];
+        string phone = Request.Form["phone"];
+        string address = Request.Form["address"];
+        ContactClass c = new ContactClass(name, phone, address);
+        return View["contact_created.cshtml", c];
+      };
     }
   }
 }
