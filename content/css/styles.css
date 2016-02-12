@@ -1,5 +1,6 @@
 form {
   width:70%;
+  margin:auto;
 }
 
 label, input {
@@ -26,4 +27,7 @@ a {
 a:hover {
   color:white;
   background: black;
+}
+.scaryButton {
+  margin-top:50px;
 }
