@@ -1,0 +1,29 @@
+form {
+  width:70%;
+}
+
+label, input {
+  display: inline-block;
+}
+label {
+  width:29%;
+}
+input {
+  width:70%;
+}
+input[type=submit] {
+  width:100%;
+}
+
+a {
+  padding:10px;
+  background:lightgray;
+  display: block;
+  margin: 5px;
+  border:1px solid black;
+}
+
+a:hover {
+  color:white;
+  background: black;
+}
